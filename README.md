@@ -3,7 +3,8 @@
 
 # 更新日志
 ###2022/1/16
-更新了博客界面的设计图片（Temp)
-![图片](./design/pagedesign.png)
+  更新了博客界面的设计图片（Temp)
+  ![图片](./design/pagedesign.png)
+
 ###2022/1/17
-为vue安装了缺失的插件
+  为vue安装了缺失的插件
