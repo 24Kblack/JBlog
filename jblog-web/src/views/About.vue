@@ -1,5 +1,18 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <h1>
+    nothing here!
+  </h1>
 </template>
+
+<script>
+// @ is an alias to /src
+export default {
+  name: 'Home',
+  components: {
+  }
+}
+</script>
+
+<style>
+
+</style>

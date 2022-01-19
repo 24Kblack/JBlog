@@ -4,6 +4,7 @@
         color="deep-purple accent-4"
         dense
         dark
+        app
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
@@ -48,7 +49,9 @@
 </template>
 
 <script>
-
+export default {
+  name: "TopBar"
+}
 </script>
 
 <style scoped>

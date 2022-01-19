@@ -1,11 +1,20 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+
+  <v-app>
+    <TopBar/>
+    <SideList/>
+    <v-main>
+      <v-container>
+        <div id="app">
+          <div id="nav">
+            <router-link to="/">Home</router-link> |
+            <router-link to="/about">About</router-link>
+          </div>
+          <router-view/>
+        </div>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <style lang="scss">
@@ -30,3 +39,15 @@
   }
 }
 </style>
+
+<script>
+import SideList from "@/components/SideList";
+import TopBar from "@/components/TopBar";
+
+export default {
+  name: 'Home',
+  components: {
+    TopBar,SideList: SideList
+  }
+}
+</script>
