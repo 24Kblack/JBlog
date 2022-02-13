@@ -1,14 +1,12 @@
 <template>
   <div>
     <v-app-bar
-        color="deep-purple accent-4"
+        color="grey lighten-1"
         dense
         dark
         app
+        clipped-left
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-      <v-toolbar-title>Page title</v-toolbar-title>
 
       <v-spacer></v-spacer>
 

@@ -1,13 +1,30 @@
 <template>
-    <v-navigation-drawer app>
+    <v-navigation-drawer
+        color="grey darken-1"
+        app
+        clipped>
+      <v-list-item style="justify-content: right">
+        <v-btn class="fold_button" icon tile large plain>
+          <v-icon color="grey lighten-2" size="38">
+            mdi-backburger
+          </v-icon>
+        </v-btn>
+      </v-list-item>
       <v-list-item>
-        <v-list-item-content>
+        <v-list-item-content class="top_avatar">
           <v-list-item-title class="text-h6">
+            <v-avatar
+                color="primary"
+                size="84"
+            >
+              <v-icon dark size="56">
+                mdi-account-circle
+              </v-icon>
+            </v-avatar>
+          </v-list-item-title>
+          <v-list-item-title style="color: rgb(211,211,211);margin-top:10px">
             用户名
           </v-list-item-title>
-          <v-list-item-subtitle>
-            简介
-          </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
 
@@ -50,5 +67,16 @@ export default {
 </script>
 
 <style scoped>
+.fold_button{
+  border-radius: 8px;
+  margin-top: 5px;
+}
 
+.fold_button:hover{
+  background: gray;
+}
+
+.top_avatar{
+  margin: 0 0 20px 0;
+}
 </style>
